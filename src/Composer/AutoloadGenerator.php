@@ -16,8 +16,6 @@ class AutoloadGenerator extends ComposerAutoloadGenerator
 	 */
 	public function parseAutoloadsTypeFiles($paths, PackageInterface $mainPackage)
 	{
-        echo "parseAutoloadsTypeFiles";
-
         $autoloads = array();
 		$installPath = '';
 
@@ -43,8 +41,6 @@ class AutoloadGenerator extends ComposerAutoloadGenerator
 	 */
 	public function dumpFiles(Composer $composer, $paths, $targetDir = 'composer', $suffix = '', $staticPhpVersion = 70000)
 	{
-	    echo "dumpFiles";
-
 		$installationManager = $composer->getInstallationManager();
 		$localRepo = $composer->getRepositoryManager()->getLocalRepository();
 		$mainPackage = $composer->getPackage();

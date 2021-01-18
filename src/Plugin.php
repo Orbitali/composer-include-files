@@ -41,7 +41,7 @@ class Plugin implements PluginInterface, EventSubscriberInterface
         return ['post-autoload-dump' => 'dumpFiles'];
     }
 
-    public function deactivate()
+    public function deactivate(Composer $composer, IOInterface $io)
     {
     }
 

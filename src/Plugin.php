@@ -45,7 +45,7 @@ class Plugin implements PluginInterface, EventSubscriberInterface
     {
     }
 
-    public function uninstall()
+    public function uninstall(Composer $composer, IOInterface $io)
     {
     }
     

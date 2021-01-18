@@ -41,6 +41,14 @@ class Plugin implements PluginInterface, EventSubscriberInterface
         return ['post-autoload-dump' => 'dumpFiles'];
     }
 
+    public function deactivate()
+    {
+    }
+
+    public function uninstall()
+    {
+    }
+    
     public function dumpFiles()
     {
         $extraConfig = $this->composer->getRepositoryManager()->findPackage("orbitali/core", "*")->getExtra();
